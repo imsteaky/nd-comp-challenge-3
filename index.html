@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,39 +11,72 @@
     crossorigin="anonymous">
   <title>Document</title>
 </head>
+
 <body>
   <section class="sidebar" role="sidebar-navigation" aria-label="This is the sidebar nav for the page">
     <section class="user-profile-picture-menu" aria-role="user-photo" aria-label="a photo of a dapper young front-end developer">
       <img src="img/itsame.jpg" alt="round image of a developer" class="round-profile-picture">
       <h2 class="user-profile-login-name" aria-role="header">Nick Dambrosio
         <i class="fas fa-angle-down" aria-role="more information about the user" aria-label="click to read more about the user"></i>
+        </label>
       </h2>
     </section>
     <p class="sidebar-sections">Main</p>
     <ul class="sidebar-links-top">
-      <li class="sidebar-home">
-        <i class="fas fa-home"></i>Home</li>
+      <li class="sidebar-home" aria-label="Home">
+        <label for="Home">
+          <i class="fas fa-home">Home</i>
+      </li>
+      </label>
       <li>
-        <i class="fas fa-briefcase"></i>Jobs</li>
+        <i class="fas fa-briefcase" aria-label="Jobs">
+          <label for="Jobs">Jobs</i>
+      </li>
+      </label>
       <li>
-        <i class="fas fa-file-alt"></i>Resume</li>
+        <i class="fas fa-file-alt" aria-label="Resume">
+          <label for="Resume">Resume</i>
+      </li>
+      </label>
       <li>
-        <i class="fas fa-clipboard-list"></i>Tasks</li>
+        <i class="fas fa-clipboard-list" aria-label="Tasks">
+          <label for="Tasks">Tasks</i>
+      </li>
+      </label>
       <li>
-        <i class="fas fa-calendar-alt"></i>Calendar</li>
+        <i class="fas fa-calendar-alt" aria-label="Calendar">
+          <label for="Calendar">Calendar</i>
+      </li>
+      </label>
     </ul>
-    <p class="sidebar-sections">Admin</p>
+    <p class="sidebar-sections" aria-label="Admin section">
+      <label for="Admin">Admin</p>
+    </label>
     <ul class="sidebar-links-mid">
       <li>
-        <i class="fas fa-user-friends"></i>Users</li>
+        <i class="fas fa-user-friends" aria-label="Users">
+          <label for="Users">Users</li>
+      </i>
       <li>
-        <i class="fas fa-map-marker-alt"></i>Locations</li>
+        <i class="fas fa-map-marker-alt" aria-label="Locations">
+          <label for="Locations">Locations</i>
+      </li>
+      </label>
       <li>
-        <i class="fas fa-sitemap"></i>Workflows</li>
+        <i class="fas fa-sitemap" aria-label="Workflows">
+          <label for="Workflows">Workflows</i>
+      </li>
+      </label>
       <li>
-        <i class="fas fa-paste"></i>Job Boards</li>
+        <i class="fas fa-paste" aria-label="Job Boards">
+          <label for="Jobs">Job Boards</i>
+      </li>
+      </label>
       <li>
-        <i class="fas fa-project-diagram"></i>Social</li>
+        <i class="fas fa-project-diagram" aria-label="Social">
+          <label for="Social">Social</i>
+      </li>
+      </label>
     </ul>
     <p class="sidebar-sections">Categories</p>
     <ul class="sidebar-links-bot">
@@ -65,52 +99,85 @@
   <main class="main-content">
     <header class="search-bar">
       <nav class="top-nav">
-        <button class="search-btns hamburger" role="menu-button" aria-label="click to expand menu"><label for="more-menu">
-          <i class="fas fa-caret-left"></i>
-          <i class="fas fa-bars"></i>
-        </button></label>
+        <button class="search-btns hamburger" role="menu-button" aria-label="click to expand menu">
+          <label for="more-menu">
+            <i class="fas fa-caret-left"></i>
+            <i class="fas fa-bars"></i>
+        </button>
+        </label>
         <input type="search" class="search-bar" placeholder: "Search for a job, task, or resume">
-        <button class="search-btns user-plus" :active role="search-button" aria-label="click to add this user as a friend"><label for="add-friend"></label>
+        <button class="search-btns user-plus" :active role="search-button" aria-label="click to add this user as a friend">
+          <label for="add-friend"></label>
           <i class="fas fa-user-plus"></i>
         </button>
-        <button class="search-btns calendar" role="calendar-button" aria-label="click to view the calendar"><label for="calendar">
-          <i class="far fa-calendar-alt"></i></label>
+        <button class="search-btns calendar" role="calendar-button" aria-label="click to view the calendar">
+          <label for="calendar">
+            <i class="far fa-calendar-alt"></i>
+          </label>
         </button>
-        <button class="search-btns numpad" aria-label="click to expand the menu"><label for="menu">
-          <i class="fas fa-th"></i></label>
+        <button class="search-btns numpad" aria-label="click to expand the menu">
+          <label for="menu">
+            <i class="fas fa-th"></i>
+          </label>
         </button>
       </nav>
       <section class="position-container" role="section describing the position">
         <section class="position-name-box">
-          <h1 aria-label="h1 for the page"><label for="h1"></label>Front-End Developer</h1></label>
+          <h1 aria-label="h1 for the page">
+            <label for="h1"></label>Front-End Developer</h1>
+          </label>
           <p class="location">
             <i class="fas fa-map-marker-alt"></i>Denver, Co &middot;
-            <span class="preview" aria-label="preview this post"><label for="preview">Preview this post</span></label>
+            <span class="preview" aria-label="preview this post">
+              <label for="preview">Preview this post</span>
+            </label>
           </p>
         </section>
         <section class="buttons-container">
           <div class="right-side-buttons">
-            <button class="open" aria-label="click to open the application menu"><label for="app menu">
-              <i class="fas fa-circle"></i> Open</button></label>
-            <button class="bookmark" aria-label="click to open the bookmark menu"><label for="bookmark menu">
-              <i class="fas fa-bookmark"></i>
-            </button></label>
-            <button class="pencil" aria-label="click to write a note"><label for="write note">
-              <i class="fas fa-pencil-alt"></i>
-            </button></label>
-            <button class="trash" aria-label="click to throw this application away"><label for="trash">
-              <i class="fas fa-trash-alt"></i>
-            </button></label>
+            <button class="open" aria-label="click to open the application menu">
+              <label for="app menu">
+                <i class="fas fa-circle"></i> Open</button>
+            </label>
+            <button class="bookmark" aria-label="click to open the bookmark menu">
+              <label for="bookmark menu">
+                <i class="fas fa-bookmark"></i>
+            </button>
+            </label>
+            <button class="pencil" aria-label="click to write a note">
+              <label for="write note">
+                <i class="fas fa-pencil-alt"></i>
+            </button>
+            </label>
+            <button class="trash" aria-label="click to throw this application away">
+              <label for="trash">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+            </label>
           </div>
         </section>
         <ul class="main-nav">
-          <li class="focus" aria-label="click to view the summary"><label for="summary">Summary</li></label>
-          <li aria-label="click to view the applicants"><label for="applicants">Applicants</li></label>
-          <li aria-label="click to view the job board"><label for="job board">Job Board</li></label>
-          <li aria-label="click to view Interviews"><label for="Interviews">Interviews</li></label>
-          <li aria-label="click to view Activity"><label for="Activity">Activity</li></label>
-          <li aria-label="click to view Brodacast"><label for="Broadcast">Broadcast</li></label>
-          <li aria-label="click to view Notifications"><label for="Notifications">Notifications</li></label>
+          <li class="focus" aria-label="click to view the summary">
+            <label for="summary">Summary</li>
+          </label>
+          <li aria-label="click to view the applicants">
+            <label for="applicants">Applicants</li>
+          </label>
+          <li aria-label="click to view the job board">
+            <label for="job board">Job Board</li>
+          </label>
+          <li aria-label="click to view Interviews">
+            <label for="Interviews">Interviews</li>
+          </label>
+          <li aria-label="click to view Activity">
+            <label for="Activity">Activity</li>
+          </label>
+          <li aria-label="click to view Brodacast">
+            <label for="Broadcast">Broadcast</li>
+          </label>
+          <li aria-label="click to view Notifications">
+            <label for="Notifications">Notifications</li>
+          </label>
         </ul>
       </section>
     </header>
@@ -246,4 +313,5 @@
   </main>
   </section>
 </body>
+
 </html>
