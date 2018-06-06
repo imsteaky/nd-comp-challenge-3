@@ -13,7 +13,7 @@ body {
 
 /* ========= Top Nav =========  */
 
-#secret-menu-button {
+#secret-menu-button{
   display: none;
 }
 
@@ -70,6 +70,10 @@ body {
   color: #7c7b80;
   padding: 2rem 2rem 0.2rem 2rem;
   grid-template-rows: 1fr 1fr;
+}
+
+.search-bar-literal::placeholder{
+  padding-left: 30px;
 }
 
 /* ========= Sidebar =========  */
@@ -242,7 +246,7 @@ main {
   transition: 300ms ease-in-out;
 }
 
-.maion-nav:hover {
+.maion-nav:hover{
   cursor: pointer;
 }
 
@@ -590,132 +594,133 @@ h5 i {
     padding: 0;
   }
 }
-@media only screen and (max-width: 1009px) {
-  .secondary-content {
-    grid-template-columns: 30rem;
-    font-size: 10px;
-  }
-  .circle-graphs {
-    display: flex;
-    flex-direction: column;
+  @media only screen and (max-width: 1009px) {
+
+    .secondary-content {
+      grid-template-columns: 30rem;
+      font-size: 10px;
+    }
+    .circle-graphs {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .circular-chart {
+      position: relative;
+      left: 120px
+    }
+
+    .dividers {
+      display: none;
+    }
+    .main-nav {
+      position: relative;
+      right: 140px;
+      margin-top: 10px;
+    }
+
+    .main-nav ul{
+      position: relative;
+      right: 100px;
+    }
+
+    .main-nav li{
+      font-size: 10px;
+    }
+    .position-container {
+      padding: 10px;
+    }
+    .totals,
+    .applicants-per-day {
+      display: none;
+    }
+    .copy-button {
+      display: none;
+    }
   }
 
-  .circular-chart {
-    position: relative;
-    left: 120px;
+  @media only screen and (max-width: 490px) {
+    body {
+      grid-template-columns: 490px;
+    }
+    #bar-graph {
+      position: relative;
+      right: 60px;
+      max-width: 15rem;
+    }
+    .secondary-content {
+      grid-template-columns: 490px;
+      font-size: 5px;
+    }
   }
 
-  .dividers {
-    display: none;
-  }
-  .main-nav {
-    position: relative;
-    right: 140px;
-    margin-top: 10px;
-  }
+  @media only screen and (max-width: 350px) {
+    body {
+      grid-template-columns: 320px;
+    }
 
-  .main-nav ul {
-    position: relative;
-    right: 100px;
-  }
+    #secret-menu-button{
+      display: inline-block;
+    }
+    .secondary-content {
+      position: absolute;
+      grid-template-columns: 320px;
+      font-size: 10px;
+    }
 
-  .main-nav li {
-    font-size: 10px;
-  }
-  .position-container {
-    padding: 10px;
-  }
-  .totals,
-  .applicants-per-day {
-    display: none;
-  }
-  .copy-button {
-    display: none;
-  }
-}
+    .search-bar-literal{
+      display:none;
+    }
+    
+    figure {
+      padding: 0;
+      margin: 0;
+    }
 
-@media only screen and (max-width: 490px) {
-  body {
-    grid-template-columns: 490px;
-  }
-  #bar-graph {
-    position: relative;
-    right: 60px;
-    max-width: 15rem;
-  }
-  .secondary-content {
-    grid-template-columns: 490px;
-    font-size: 5px;
-  }
-}
+    .main-nav {
+      display: none;
+    }
 
-@media only screen and (max-width: 350px) {
-  body {
-    grid-template-columns: 320px;
-  }
+    .circular-chart {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 30px;
+      padding: 0;
+    }
 
-  #secret-menu-button {
-    display: inline-block;
-  }
-  .secondary-content {
-    position: absolute;
-    grid-template-columns: 320px;
-    font-size: 10px;
-  }
+    button {
+      display: none;
+    }
+    #bar-graph {
+      position: relative;
+      right: 60px;
+      max-width: 15rem;
+    }
 
-  .search-bar-literal {
-    display: none;
-  }
+    .right-side-nav-container {
+      position: relative;
+      right: -20px;
+      padding: 5px;
+    }
+    .right-side-mini-nav {
+      margin: 0;
+    }
+    .info-text {
+      font-size: 10px;
+      height: 15px;
+    }
 
-  figure {
-    padding: 0;
-    margin: 0;
-  }
+    .link-input {
+      font-size: 10px;
+      height: 30px;
+    }
+    .information-table {
+      padding: 0;
+      margin: 0;
+    }
 
-  .main-nav {
-    display: none;
+    .link-input.email {
+      width: 18rem;
+    }
   }
-
-  .circular-chart {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 30px;
-    padding: 0;
-  }
-
-  button {
-    display: none;
-  }
-  #bar-graph {
-    position: relative;
-    right: 60px;
-    max-width: 15rem;
-  }
-
-  .right-side-nav-container {
-    position: relative;
-    right: -20px;
-    padding: 5px;
-  }
-  .right-side-mini-nav {
-    margin: 0;
-  }
-  .info-text {
-    font-size: 10px;
-    height: 15px;
-  }
-
-  .link-input {
-    font-size: 10px;
-    height: 30px;
-  }
-  .information-table {
-    padding: 0;
-    margin: 0;
-  }
-
-  .link-input.email {
-    width: 18rem;
-  }
-}
