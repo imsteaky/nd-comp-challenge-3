@@ -89,6 +89,7 @@ body {
   height: 100%;
   max-width: 15rem;
   min-width: 12rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .sidebar-links-top,
@@ -96,6 +97,15 @@ body {
 .sidebar-links-bot {
   padding-bottom: 5px;
   border-bottom: 1px solid #2e394a;
+  font-family: "Open Sans", sans-serif!important;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 5px;
+  margin-left: 2px;
+}
+
+#home-text{
+  font-family: "Open Sans", sans-serif!important;
 }
 
 .user-profile-picture-menu {
@@ -163,6 +173,14 @@ h1 {
   background-color: #30394a;
   color: #dddfe5;
   cursor: pointer;
+  border-left: 3px solid #16a4fa;
+}
+
+.sidebar-focus{
+  background-color: #30394a;
+  color: #dddfe5;
+  cursor: pointer;
+  border-left: 3px solid #16a4fa;
 }
 
 .sidebar-links-mid i {
@@ -174,6 +192,7 @@ h1 {
 .sidebar-links-mid li:hover {
   background-color: #30394a;
   color: #dddfe5;
+  border-left: 3px solid #16a4fa;
 }
 
 .sidebar-links-bot li {
@@ -243,12 +262,14 @@ main {
   margin-left: 20px;
   padding: 0 10px 0.8rem 10px;
   text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-nav li:hover {
   border-bottom: 4px solid #16a4fa;
   cursor: pointer;
   transition: 300ms ease-in-out;
+  font-family: "Open Sans", sans-serif;
 }
 
 .maion-nav:hover {
