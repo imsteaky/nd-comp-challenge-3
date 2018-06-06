@@ -310,7 +310,6 @@ hr {
 
 .charts-and-such {
   background-color: #edf2f6;
-  border-top: 1px solid #e8edf1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 4;
   margin-top: 0.8rem;
