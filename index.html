@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <section class="sidebar">
+    <section class="user-profile-picture-menu">
+      <img src="img/itsame.jpg" class="round-profile-picture">
+      <h2 class="user-profile-login-name">Nick Dambrosio
+        <i class="fas fa-angle-down"></i>
+      </h2>
+    </section>
+    <p class="sidebar-sections">Main</p>
+    <ul class="sidebar-links-top">
+      <li class="sidebar-home">
+        <i class="fas fa-home"></i>Home</li>
+      <li>
+        <i class="fas fa-briefcase"></i>Jobs</li>
+      <li>
+        <i class="fas fa-file-alt"></i>Resume</li>
+      <li>
+        <i class="fas fa-clipboard-list"></i>Tasks</li>
+      <li>
+        <i class="fas fa-calendar-alt"></i>Calendar</li>
+    </ul>
+    <p class="sidebar-sections">Admin</p>
+    <ul class="sidebar-links-mid">
+      <li>
+        <i class="fas fa-user-friends"></i>Users</li>
+      <li>
+        <i class="fas fa-map-marker-alt"></i>Locations</li>
+      <li>
+        <i class="fas fa-sitemap"></i>Workflows</li>
+      <li>
+        <i class="fas fa-paste"></i>Job Boards</li>
+      <li>
+        <i class="fas fa-project-diagram"></i>Social</li>
+    </ul>
+    <p class="sidebar-sections">Categories</p>
+    <ul class="sidebar-links-bot">
+      <div class="checkbox-container">
+        <li>
+          <input type="checkbox" checked>
+          <span class="checkmark admin"></span>Administrative</li>
+        <li>
+          <input type="checkbox">
+          <span class="checkmark design"></span>Design</li>
+        <li>
+          <input type="checkbox">
+          <span class="checkmark exec"></span>Executive</li>
+        <li>
+          <input type="checkbox">
+          <span class="checkmark human"></span>Human Resources</li>
+    </ul>
+    </div>
+  </section>
+  <main class="main-content">
+    <header class="search-bar">
+      <nav class="top-nav">
+        <button class="search-btns hamburger">
+          <i class="fas fa-caret-left"></i>
+          <i class="fas fa-bars"></i>
+        </button>
+        <input type="search" class="search-bar" placeholder: "Search for a job, task, or resume">
+        <button class="search-btns user-plus" :active>
+          <i class="fas fa-user-plus"></i>
+        </button>
+        <button class="search-btns calendar">
+          <i class="far fa-calendar-alt"></i>
+        </button>
+        <button class="search-btns numpad">
+          <i class="fas fa-th"></i>
+        </button>
+      </nav>
+      <section class="position-container">
+        <section class="position-name-box">
+          <h1>Front-End Developer</h1>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i>Denver, Co &middot;
+            <span class="preview">Preview this post</span>
+          </p>
+        </section>
+        <section class="buttons-container">
+          <div class="right-side-buttons">
+            <button class="open">
+              <i class="fas fa-circle"></i> Open</button>
+            <button class="bookmark">
+              <i class="fas fa-bookmark"></i>
+            </button>
+            <button class="pencil">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
+            <button class="trash">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </section>
+        <ul class="main-nav">
+          <li class="focus">Summary</li>
+          <li>Applicants</li>
+          <li>Job Board</li>
+          <li>Interviews</li>
+          <li>Activity</li>
+          <li>Broadcast</li>
+          <li>Notifications</li>
+        </ul>
+      </section>
+    </header>
+    <section id="bottom half">
+      <section class="summary-container">
+        <section class="charts-and-such">
+          <figure class="circle-graphs">
+            <svg viewbox="0 0 35 35" class="circular-chart applicants">
+              <path class="circle-bg" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <path class="circle-one" stroke-dasharray="80, 100" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <text x="8" y="20" class="circle-numbers">3,154</text>
+              <text x="9" y="25" class="circle-explain">Applicants</text>
+            </svg>
+            <svg viewbox="0 0 35 35" class="circular-chart interviews">
+              <path class="circle-bg" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <path class="circle-two" stroke-dasharray="33, 100" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <text x="8" y="20" class="circle-numbers">1,546</text>
+              <text x="9" y="25" class="circle-explain">Interviews</text>
+            </svg>
+            <svg viewbox="0 0 35 35" class="circular-chart forwards">
+              <path class="circle-bg" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <path class="circle-three" stroke-dasharray="22, 100" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <text x="11" y="20" class="circle-numbers">912</text>
+              <text x="9" y="25" class="circle-explain">Forwards</text>
+            </svg>
+            <div class="bar-graph-box">
+              <figure class="bar-graph"></figure>
+              <img src="img/lolezmode.png" id="bar-graph" alt="an image of a bar graph after wrestling with svgs for two hours">
+            </div>
+          </figure>
+          <div class="totals-buttons">
+            <button class="total totals">Totals &middot; Out of 5,233 views</button>
+            <button class="total applicants-per-day">Applicants/Day</button>
+          </div>
+        </section>
+      </section>
+      <section class='dividers'>
+        <hr class="divider-line">
+        <i class="fas fa-chevron-circle-up"></i>
+        <hr class="divider-line">
+      </section>
+
+      <section class="secondary-content">
+        <table class="information-table">
+          <tr>
+            <th class="th-left">Job Description</th>
+            <th class="th-right">
+              <button class="edit-button">
+                <i class="fas fa-pencil-alt"></i>Edit</button>
+            </th>
+          </tr>
+          <tr>
+            <td class="td">Position Title</td>
+            <td class="td">Front-End Developer</td>
+          </tr>
+          <tr>
+            <td class="td">Location</td>
+            <td class="td">Denver, Co</td>
+          </tr>
+          <tr>
+            <td class="td">Employment-Type</td>
+            <td class="td">Full-time</td>
+          </tr>
+          <tr>
+            <td class="td">Experience</td>
+            <td class="td">Fresh</td>
+          </tr>
+          <tr>
+            <td class="td">Status</td>
+            <td class="td">Open</td>
+          </tr>
+          <tr>
+            <td class="td">Description</td>
+            <td class="td">The front-end developer creates interaction and user experience with scripts embedded in a site’s HTML. Everything
+              a visitor to your site sees, clicks, or uses to input or retrieve information is the work of the front-end
+              developer who creates client-side software that brings the site’s design to life. Scripts are downloaded by
+              the browser, processed, and then run apart from the server.</td>
+          </tr>
+          <tr>
+            <td class="td">Hiring Lead</td>
+            <td class="td">
+              <img src="img/gray.jpg" class="round-face-small" alt="">
+              <span class="likethecolorgray">Gray Smith</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="td">Approved Salary</td>
+            <td class="td">$68,000</td>
+          </tr>
+        </table>
+        <aside class="right-side-mini-nav">
+          <div class="right-side-nav-container">
+            <section class="social-media-links">
+              <button class="social facebook-link">
+                <i class="fab fa-facebook-f"></i>Post to Facebook</button>
+              <button class="social twitter-link">
+                <i class="fab fa-twitter"></i>Tweet this Job</button>
+              <button class="social linkedin-link">
+                <i class="fab fa-linkedin"></i>Post to Facebook</button>
+            </section>
+            <h5>
+              <i class="fas fa-globe"></i>Link to this Job</h5>
+            <p class="info-text">Click copy to copy this job posting to your clipboard.</p>
+            <input type="text" class="link-input" placeholder="https://www.github.com/ims...">
+            <button class="copy-button">Copy</button>
+            <h5>
+              <i class="fas fa-window-maximize"></i>Use the Button Widget.</h5>
+            <p class="info-text">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+            <input type="text" class="link-input" placeholder="https://www.github.com/ims...">
+            <button class="copy-button">Copy</button>
+            <h5>
+              <i class="fas fa-paper-plane"></i>Upload Resumes by Email</h5>
+            <p class="info-text">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+            <input type="text" class="link-input email" placeholder="colorgray@gmail.com">
+          </div>
+        </aside>
+      </section>
+    </section>
+    </section>
+    </section>
+  </main>
+  </section>
+</body>
+</html>
