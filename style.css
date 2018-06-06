@@ -235,6 +235,10 @@ main {
   transition: 300ms ease-in-out;
 }
 
+.maion-nav:hover{
+  cursor: pointer;
+}
+
 .focus {
   border-bottom: 4px solid #16a4fa;
 }
