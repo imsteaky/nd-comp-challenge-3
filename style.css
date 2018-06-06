@@ -13,6 +13,10 @@ body {
 
 /* ========= Top Nav =========  */
 
+#secret-menu-button{
+  display: none;
+}
+
 .top-nav {
   background-color: #fff;
   border-bottom: 1px solid #c3c9d3;
@@ -36,7 +40,7 @@ body {
   border-left: 0.5px solid #c3c9d3;
 }
 
-.search-bar {
+.search-bar-literal {
   background: none;
   border: #93adc1;
   display: inline-block;
@@ -551,7 +555,7 @@ h5 i {
 
 @media only screen and (max-width: 1150px) {
   .secondary-content {
-    grid-template-columns: 30rem;
+    grid-template-columns: 30rem 30rem;
     font-size: 10px;
   }
   .social {
@@ -584,6 +588,11 @@ h5 i {
   }
 }
   @media only screen and (max-width: 1009px) {
+
+    .secondary-content {
+      grid-template-columns: 30rem;
+      font-size: 10px;
+    }
     .circle-graphs {
       display: flex;
       flex-direction: column;
@@ -623,12 +632,6 @@ h5 i {
     }
   }
 
-  @media only screen and (max-width: 800px) {
-    body {
-      grid-template-columns: 490px;
-    }
-  }
-
   @media only screen and (max-width: 490px) {
     body {
       grid-template-columns: 490px;
@@ -639,7 +642,7 @@ h5 i {
       max-width: 15rem;
     }
     .secondary-content {
-      grid-template-columns: 400px;
+      grid-template-columns: 490px;
       font-size: 5px;
     }
   }
@@ -649,21 +652,25 @@ h5 i {
       grid-template-columns: 320px;
     }
 
+    #secret-menu-button{
+      display: inline-block;
+    }
     .secondary-content {
       position: absolute;
+      grid-template-columns: 320px;
+      font-size: 10px;
     }
 
+    .search-bar-literal{
+      display:none;
+    }
     figure {
       padding: 0;
       margin: 0;
     }
 
     .main-nav {
-      font-size: 9px;
-      display: inline;
-      padding: 0;
-      position: relative;
-      right: 140px;
+      display: none;
     }
 
     .circular-chart {
@@ -673,10 +680,7 @@ h5 i {
       left: 30px;
       padding: 0;
     }
-    .secondary-content {
-      grid-template-columns: 320px;
-      font-size: 10px;
-    }
+
     button {
       display: none;
     }
