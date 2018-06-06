@@ -328,12 +328,16 @@ hr {
   margin-left: 20px;
   max-width: 10rem;
   min-width: 10rem;
-  /* transform: rotate(180deg); */
 }
 
 .circle-explain {
   font-size: 0.2rem;
   text-transform: uppercase;
+}
+.circle-bg {
+  fill: none;
+  stroke: #d6dadf;
+  stroke-width: 1.8;
 }
 
 .circle-one,
