@@ -624,8 +624,9 @@ h5 i {
 }
 
 @media only screen and (max-width: 1009px) {
+
   .secondary-content {
-    grid-template-columns: 30rem;
+    grid-template-columns: 30rem 30rem;
     font-size: 10px;
   }
   .circle-graphs {
@@ -661,6 +662,12 @@ h5 i {
   .copy-button {
     display: none;
   }
+}
+
+@media only screen and (max-width: 900px){
+    .secondary-content {
+      grid-template-columns: 30rem;
+    }
 }
 
 @media only screen and (max-width: 490px) {
