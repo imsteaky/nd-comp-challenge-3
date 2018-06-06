@@ -54,6 +54,10 @@ body {
   background-size: 15px;
 }
 
+.search-bar input{
+  padding-left: 3s0px;
+}
+
 .fa-caret-left {
   color: #16a4fa;
   margin-right: 2px;
