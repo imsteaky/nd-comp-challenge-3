@@ -13,7 +13,7 @@ body {
 
 /* ========= Top Nav =========  */
 
-#secret-menu-button{
+#secret-menu-button {
   display: none;
 }
 
@@ -57,6 +57,7 @@ body {
 .search-btns:hover {
   background-color: #16a4fa;
   color: #fcfafb !important;
+  cursor: pointer;
 }
 
 .search-btns:active {
@@ -118,6 +119,7 @@ h1 {
 
 .location {
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .preview {
@@ -151,6 +153,7 @@ h1 {
 .sidebar-links-top li:hover {
   background-color: #30394a;
   color: #dddfe5;
+  cursor: pointer;
 }
 
 .sidebar-links-mid i {
@@ -239,7 +242,7 @@ main {
   transition: 300ms ease-in-out;
 }
 
-.maion-nav:hover{
+.maion-nav:hover {
   cursor: pointer;
 }
 
@@ -587,132 +590,132 @@ h5 i {
     padding: 0;
   }
 }
-  @media only screen and (max-width: 1009px) {
-
-    .secondary-content {
-      grid-template-columns: 30rem;
-      font-size: 10px;
-    }
-    .circle-graphs {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .circular-chart {
-      position: relative;
-      left: 120px
-    }
-
-    .dividers {
-      display: none;
-    }
-    .main-nav {
-      position: relative;
-      right: 140px;
-      margin-top: 10px;
-    }
-
-    .main-nav ul{
-      position: relative;
-      right: 100px;
-    }
-
-    .main-nav li{
-      font-size: 10px;
-    }
-    .position-container {
-      padding: 10px;
-    }
-    .totals,
-    .applicants-per-day {
-      display: none;
-    }
-    .copy-button {
-      display: none;
-    }
+@media only screen and (max-width: 1009px) {
+  .secondary-content {
+    grid-template-columns: 30rem;
+    font-size: 10px;
+  }
+  .circle-graphs {
+    display: flex;
+    flex-direction: column;
   }
 
-  @media only screen and (max-width: 490px) {
-    body {
-      grid-template-columns: 490px;
-    }
-    #bar-graph {
-      position: relative;
-      right: 60px;
-      max-width: 15rem;
-    }
-    .secondary-content {
-      grid-template-columns: 490px;
-      font-size: 5px;
-    }
+  .circular-chart {
+    position: relative;
+    left: 120px;
   }
 
-  @media only screen and (max-width: 320px) {
-    body {
-      grid-template-columns: 320px;
-    }
-
-    #secret-menu-button{
-      display: inline-block;
-    }
-    .secondary-content {
-      position: absolute;
-      grid-template-columns: 320px;
-      font-size: 10px;
-    }
-
-    .search-bar-literal{
-      display:none;
-    }
-    figure {
-      padding: 0;
-      margin: 0;
-    }
-
-    .main-nav {
-      display: none;
-    }
-
-    .circular-chart {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      left: 30px;
-      padding: 0;
-    }
-
-    button {
-      display: none;
-    }
-    #bar-graph {
-      position: relative;
-      right: 60px;
-      max-width: 15rem;
-    }
-
-    .right-side-nav-container {
-      position: relative;
-      right: -20px;
-      padding: 5px;
-    }
-    .right-side-mini-nav {
-      margin: 0;
-    }
-    .info-text {
-      font-size: 10px;
-      height: 15px;
-    }
-
-    .link-input {
-      font-size: 10px;
-      height: 30px;
-    }
-    .information-table {
-      padding: 0;
-      margin: 0;
-    }
-
-    .link-input.email {
-      width: 18rem;
-    }
+  .dividers {
+    display: none;
   }
+  .main-nav {
+    position: relative;
+    right: 140px;
+    margin-top: 10px;
+  }
+
+  .main-nav ul {
+    position: relative;
+    right: 100px;
+  }
+
+  .main-nav li {
+    font-size: 10px;
+  }
+  .position-container {
+    padding: 10px;
+  }
+  .totals,
+  .applicants-per-day {
+    display: none;
+  }
+  .copy-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  body {
+    grid-template-columns: 490px;
+  }
+  #bar-graph {
+    position: relative;
+    right: 60px;
+    max-width: 15rem;
+  }
+  .secondary-content {
+    grid-template-columns: 490px;
+    font-size: 5px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    grid-template-columns: 320px;
+  }
+
+  #secret-menu-button {
+    display: inline-block;
+  }
+  .secondary-content {
+    position: absolute;
+    grid-template-columns: 320px;
+    font-size: 10px;
+  }
+
+  .search-bar-literal {
+    display: none;
+  }
+
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .circular-chart {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30px;
+    padding: 0;
+  }
+
+  button {
+    display: none;
+  }
+  #bar-graph {
+    position: relative;
+    right: 60px;
+    max-width: 15rem;
+  }
+
+  .right-side-nav-container {
+    position: relative;
+    right: -20px;
+    padding: 5px;
+  }
+  .right-side-mini-nav {
+    margin: 0;
+  }
+  .info-text {
+    font-size: 10px;
+    height: 15px;
+  }
+
+  .link-input {
+    font-size: 10px;
+    height: 30px;
+  }
+  .information-table {
+    padding: 0;
+    margin: 0;
+  }
+
+  .link-input.email {
+    width: 18rem;
+  }
+}
